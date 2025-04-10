@@ -64,9 +64,10 @@ require("lazy").setup({
     build = ":TSUpdate",
     config = function()
       require("nvim-treesitter.configs").setup({
-        ensure_installed = { "lua", "python", "javascript", "typescript", "cpp", "bash", "json" },
+        ensure_installed = { "lua", "python", "javascript", "typescript", "cpp", "bash", "json", "rust" },
         highlight = { enable = true },
         indent = { enable = true },
+        auto_install = true,
       })
     end,
   },
@@ -85,7 +86,7 @@ require("lazy").setup({
       -- Setup Mason
       require("mason").setup()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "pyright", "ts_ls", "clangd" },  -- Updated version
+        ensure_installed = { "lua_ls", "pyright", "ts_ls", "clangd", "rust_analyzer" },  -- Updated version
       })
       -- LSP setup
       local lspconfig = require("lspconfig")
