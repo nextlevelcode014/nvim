@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "ashes",
+	theme = "onedark",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
@@ -19,8 +19,6 @@ M.base46 = {
 --       tabufline = {
 --          lazyload = false
 --      }
---}
-
-
+-- }
 
 return M
